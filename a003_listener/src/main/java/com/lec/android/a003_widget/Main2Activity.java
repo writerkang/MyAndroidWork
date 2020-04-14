@@ -23,7 +23,6 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         textResult = findViewById(R.id.textResult);
-
         btn0 = findViewById(R.id.button0);
         btn1 = findViewById(R.id.button1);
         btn2 = findViewById(R.id.button2);
@@ -47,23 +46,30 @@ public class Main2Activity extends AppCompatActivity {
                 cal2 = textResult.getText().toString();
                 if(symbol.equals("") || cal1.equals("") || cal2.equals("")) return;
 
-                if(symbol.equals("+")) {
-                    double result = Double.parseDouble(cal1) + Double.parseDouble(cal2);
-                    textResult.setText(String.valueOf(result));
-                } else if(symbol.equals("-")) {
-                    double result = Double.parseDouble(cal1) - Double.parseDouble(cal2);
-                    textResult.setText(String.valueOf(result));
-                } else if(symbol.equals("X")) {
-                    double result = Double.parseDouble(cal1) * Double.parseDouble(cal2);
-                    textResult.setText(String.valueOf(result));
-                } else {
-                    double result = Double.parseDouble(cal1) / Double.parseDouble(cal2);
-                    textResult.setText(String.valueOf(result));
+                try {
+                    if(symbol.equals("+")) {
+                        double result = Double.parseDouble(cal1) + Double.parseDouble(cal2);
+                        textResult.setText(String.valueOf(result));
+                    } else if(symbol.equals("-")) {
+                        double result = Double.parseDouble(cal1) - Double.parseDouble(cal2);
+                        textResult.setText(String.valueOf(result));
+                    } else if(symbol.equals("X")) {
+                        double result = Double.parseDouble(cal1) * Double.parseDouble(cal2);
+                        textResult.setText(String.valueOf(result));
+                    } else {
+                        double result = Double.parseDouble(cal1) / Double.parseDouble(cal2);
+                        textResult.setText(String.valueOf(result));
+                    }
+
+                } catch (Exception e){
+                    textResult.setText("");
+
+                } finally {
+                    cal1 = "";
+                    cal2 = "";
+                    symbol = "";
                 }
 
-                cal1 = "";
-                cal2 = "";
-                symbol = "";
             }
         });
 
