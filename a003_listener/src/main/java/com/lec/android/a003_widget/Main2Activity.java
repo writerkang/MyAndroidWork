@@ -45,19 +45,20 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View v) {
                 cal2 = textResult.getText().toString();
                 if(symbol.equals("") || cal1.equals("") || cal2.equals("")) return;
+                double result = 0;
 
                 try {
                     if(symbol.equals("+")) {
-                        double result = Double.parseDouble(cal1) + Double.parseDouble(cal2);
+                        result = Double.parseDouble(cal1) + Double.parseDouble(cal2);
                         textResult.setText(String.valueOf(result));
                     } else if(symbol.equals("-")) {
-                        double result = Double.parseDouble(cal1) - Double.parseDouble(cal2);
+                        result = Double.parseDouble(cal1) - Double.parseDouble(cal2);
                         textResult.setText(String.valueOf(result));
                     } else if(symbol.equals("X")) {
-                        double result = Double.parseDouble(cal1) * Double.parseDouble(cal2);
+                        result = Double.parseDouble(cal1) * Double.parseDouble(cal2);
                         textResult.setText(String.valueOf(result));
                     } else {
-                        double result = Double.parseDouble(cal1) / Double.parseDouble(cal2);
+                        result = Double.parseDouble(cal1) / Double.parseDouble(cal2);
                         textResult.setText(String.valueOf(result));
                     }
 
