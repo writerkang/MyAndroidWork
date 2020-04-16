@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인터넷 이미지 보기"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/tvUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="URL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.64"
+        android:src="@drawable/abc_btn_check_to_on_mtrl_000" />
+
+</LinearLayout>
+
+
