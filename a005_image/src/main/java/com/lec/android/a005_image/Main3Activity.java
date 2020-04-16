@@ -44,7 +44,7 @@ public class Main3Activity extends AppCompatActivity {
     //이미지경로알아내기
     //픽셀폰: 갤러리 이미지보기 -> 하단의i버튼
     //삼성폰: 갤러리 이미지롱클릭
-    private String imgPath = "/sdcard/DCIM/Camera/france.png";
+    private String imgPath = "/storage/emulated/0/DCIM/Camera/france.png";
 
     private final int PERMISSION_REQUEST_CODE = 101; //권한 요청 코드값(int)
     private final String [] PERMISSIONS = {// 요청할 권한들을 String[]로 준비
