@@ -23,9 +23,9 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        et1 = findViewById(R.id.et1);
-        et2 = findViewById(R.id.et2);
-        btnStart = findViewById(R.id.btnStart);
+        et1 = findViewById(R.id.etName);
+        et2 = findViewById(R.id.etAge);
+        btnStart = findViewById(R.id.btnStartTwo);
         tvResult = findViewById(R.id.tvResult);
 
         btnStart.setOnClickListener(new View.OnClickListener() {
@@ -55,8 +55,20 @@ public class Main3Activity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        // TODO : 밥묵자...
+        if (resultCode == RESULT_OK) { // 정상 반환인 경우
 
+            switch (requestCode){
+                case REQUEST_CODE_CALC:
+                    int a = data.getIntExtra("plus", 0);
+                    int b = data.getIntExtra("minus", 0);
+
+                    tvResult.setText(requestCode + " 받아온 값: " + a + " : " + b);
+                    break;
+            }
+
+        } else{
+            // 정상 결과가 아닌 경우 처리
+        }
     }
 
 

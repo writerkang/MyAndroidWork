@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -51,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("myapp", "onCreate");
 
-        et1 = findViewById(R.id.et1);
-        et2 = findViewById(R.id.et2);
+        et1 = findViewById(R.id.etName);
+        et2 = findViewById(R.id.etAge);
         tvResult = findViewById(R.id.tvResult);
         btnAction = findViewById(R.id.btnAction);
 
