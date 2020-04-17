@@ -1,7 +1,6 @@
 rootProject.name='AndroidWork'
-include ':a001_hello'
+include ':a001_hello', 'a007_activity', 'a006_widget2'
 include ':a002_layout'
 include ':a003_listener'
 include ':a004_widget'
 include ':a005_image'
-include ':a006_widget2'
