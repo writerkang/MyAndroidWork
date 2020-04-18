@@ -1,4 +1,4 @@
-package com.lec.android.a008_practice;
+package com.lec.a008_practice;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.lec.android.a008_practice", appContext.getPackageName());
+        assertEquals("com.lec.a008_practice", appContext.getPackageName());
     }
 }

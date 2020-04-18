@@ -1,4 +1,4 @@
-package com.lec.android.a008_practice;
+package com.lec.a008_practice;
 
 import org.junit.Test;
 
