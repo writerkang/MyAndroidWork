@@ -1,6 +1,8 @@
 package com.lec.a008_practice;
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable {
     String name;
     int age;
     String adr;

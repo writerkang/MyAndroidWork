@@ -1,5 +1,7 @@
 package com.lec.a008_practice;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,6 +63,20 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
                 }
             });
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    int position = getAdapterPosition();
+                    Intent intent = new Intent(v.getContext(), PersonDetail.class);
+                    intent.putExtra("person", adapter.getItem(position));
+                    intent.putExtra("position", position);
+//                    v.getContext().startActivity(intent);
+                    ((Activity)v.getContext()).startActivityForResult(intent, 101);
+
+                }
+            });
+
         } // end generator();
 
         public void setItem(Person item) {
@@ -93,5 +109,9 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
     public void removeItem(int position) {
         items.remove(position);
     }
+
+
+
+
 
 } //end PersonAdapter
