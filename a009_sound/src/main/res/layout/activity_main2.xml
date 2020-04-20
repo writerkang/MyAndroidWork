@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="MediaPlayer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play"
+            android:text="시작" />
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_pause"
+            android:text="일시정지" />
+
+        <ImageButton
+            android:id="@+id/btnResume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_slideshow"
+            android:text="재시작" />
+
+        <ImageButton
+            android:id="@+id/btnStop"
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/checkbox_off_background"
+            android:text="종료" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/sb"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStop"
+        android:layout_alignLeft="@+id/btnStop"
+        android:layout_marginTop="18dp" />
+
+</LinearLayout>

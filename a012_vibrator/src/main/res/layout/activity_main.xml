@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vibrator"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Button
+        android:id="@+id/btnVib1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진동1" />
+
+    <Button
+        android:id="@+id/btnVib2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진동2" />
+
+    <Button
+        android:id="@+id/btnVib3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진동3" />
+
+    <Button
+        android:id="@+id/btnVib4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진동4" />
+
+</LinearLayout>
+
+
+
