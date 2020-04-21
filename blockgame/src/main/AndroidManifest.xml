@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gmail.kdash111.kang.blockgame">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/btn_red_off"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Info"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" ></activity>
+        <activity android:name=".HowToPlay"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" ></activity>
+        <activity android:name=".Start"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" ></activity>>
+        <activity
+            android:name=".Main"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Intro"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
