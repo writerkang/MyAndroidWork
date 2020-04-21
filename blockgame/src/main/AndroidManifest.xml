@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.gmail.kdash111.kang.blockgame">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/btn_red_off"
@@ -17,13 +18,11 @@
             tools:ignore="LockedOrientationActivity" ></activity>
         <activity android:name=".Start"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity" ></activity>>
-        <activity
-            android:name=".Main"
+            tools:ignore="LockedOrientationActivity" ></activity>
+        <activity android:name=".Main"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity" />
-        <activity
-            android:name=".Intro"
+            tools:ignore="LockedOrientationActivity" ></activity>
+        <activity android:name=".Intro"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
             <intent-filter>
