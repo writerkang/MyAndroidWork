@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ContextMenu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/tvCtxMenu"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_margin="5dp"
+        android:background="#CDDC39"
+        android:text="→여기를 롱클릭 하시면 ContextMenu 등장"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <ImageView
+        android:id="@+id/ivCtxView"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</LinearLayout>
