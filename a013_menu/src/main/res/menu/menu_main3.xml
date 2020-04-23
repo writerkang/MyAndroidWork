@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_refresh"
+        android:title="새로고침"
+        android:icon="@drawable/menu_refresh"
+        app:showAsAction="always"
+        />
+
+    <!--
+    <item
+        android:id="@+id/menu_search"
+        android:title="검색"
+        android:icon="@drawable/menu_search"
+        app:showAsAction="always"
+        />
+        -->
+
+    <item
+        android:id="@+id/menu_setting"
+        android:title="설정"
+        android:icon="@drawable/menu_settings"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/menu_alarm_icon"
+        android:title="알람"
+        android:icon="@drawable/ic_alarm_white_18dp"
+        app:showAsAction="always"
+        />
+
+   <item
+        android:id="@+id/menu_search"
+        android:title="검색"
+        app:showAsAction="always"
+        android:orderInCategory="102"
+        app:actionLayout="@layout/search_layout"
+        />
+
+    <!--
+    android:actionLayout은 동작 안한다
+    app:actionLayout으로 하기
+    -->
+
+</menu>

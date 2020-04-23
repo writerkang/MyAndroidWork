@@ -9,16 +9,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main2Activity">
+        <activity android:name=".Main5Activity">
+
+        </activity>
+        <activity
+            android:name=".Main4Activity"
+            android:label="Main">
+
+        </activity>
+        <activity android:name=".Main3Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainActivity" />
+        <!--
+        UP Navigation 작동을 위한 액티비티 설정
+        4.1 이상; <activity> 에 android:parentActivityName 를 적용
+        4.0 이하: meta-data 를 통해 설정.
+        -->
+        <activity
+            android:name=".ChildActivity1"
+            android:label="Main > Child1"
+            android:parentActivityName=".Main4Activity" />
+        <activity
+            android:name=".ChildActivity2"
+            android:label="Main > Child1 > Child2"
+            android:parentActivityName=".ChildActivity1"></activity>
     </application>
 
 </manifest>
