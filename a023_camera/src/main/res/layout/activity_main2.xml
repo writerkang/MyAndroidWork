@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CameraSurfaceView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="사진찍기" />
+
+    <!-- 카메라 미리보기를 추가할 공간 확보 -->
+    <FrameLayout
+        android:id="@+id/previewFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+</FrameLayout>
+    </LinearLayout>

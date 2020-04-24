@@ -33,19 +33,38 @@ public class Main3Activity extends AppCompatActivity {
 
         switch (event.getAction() & MotionEvent.ACTION_MASK){
             case MotionEvent.ACTION_DOWN: //한개 포인트에 DOWN이 발생했을때
+                id[0] = event.getPointerId(0); //터치한 순간에 부여되는 포인트 고유번호
+                x[0] = (int)event.getX();
+                y[0] = (int)event.getY();
+                result = "싱글터치 : \n";
+                result += "(" + x[0] + ", " + y[0] + ")";
 
                 break;
             case MotionEvent.ACTION_POINTER_DOWN: //두개 이상의 포인트에 대한 DOWN이 발생했을때
-
+                result = "멀티터치 : \n";
+                for(int i = 0; i < pointCount; i++){
+                    id[i] = event.getPointerId(i);
+                    x[i] = (int)event.getX(i);
+                    y[i] = (int)event.getX(i);
+                    result += "id[" + id[i] + "] (" + x[i] + ", " + y[i] + ")\n";
+                }
                 break;
             case MotionEvent.ACTION_MOVE:
+                result = "멀티터치 MOVE : \n";
+                for(int i = 0; i < pointCount; i++){
+                    id[i] = event.getPointerId(i);
+                    x[i] = (int)event.getX(i);
+                    y[i] = (int)event.getX(i);
+                    result += "id[" + id[i] + "] (" + x[i] + ", " + y[i] + ")\n";
+                }
 
                 break;
 
             case MotionEvent.ACTION_UP:
-
+                result = "";
                 break;
         }
+        tvResult.setText(result);
 
         return super.onTouchEvent(event);
     }
