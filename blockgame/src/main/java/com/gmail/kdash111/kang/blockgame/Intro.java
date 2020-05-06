@@ -16,7 +16,7 @@ import android.os.Message;
 
 public class Intro extends AppCompatActivity {
     //초기화면
-    //3초동안 보이고,다음화면(Main)으로 넘어가기
+    //3초동안 보이고,다음화면(Main)으로 넘어가기 aa
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
